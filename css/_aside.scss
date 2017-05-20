@@ -1,0 +1,17 @@
+.menu{
+  background: #000;
+  width:400px;
+  height:800px;
+  position:fixed;
+  z-index: 3;
+  overflow:hidden;
+  nav{
+    margin-top:60px;
+    text-decoration: none;
+    color:white;
+  }
+}
+
+.menu nav:hover {
+  cursor: pointer;
+}
