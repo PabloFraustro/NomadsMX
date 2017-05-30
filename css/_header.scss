@@ -1,6 +1,9 @@
 header{
   .container{
-    margin-left:310px;
+    width:75%;
+    float:right;
+    position:relative;
+    right:0;
     background: url('../img/header_photo.png') #fff;
     background-size: cover;
     background-attachment: fixed;
@@ -16,7 +19,8 @@ header{
         position:absolute;
         top: 150px;
         opacity:0;
-        right:12%;
+        line-height: 40px;
+        left:3%;
         font-weight:500;
         margin-left: 40px;
         span{
