@@ -1,17 +1,27 @@
-.menu{
-  background: #000;
-  width:400px;
-  height:800px;
-  position:fixed;
-  z-index: 3;
-  overflow:hidden;
-  nav{
-    margin-top:60px;
-    text-decoration: none;
-    color:white;
+.main aside{
+  .container{
+    position:fixed;
+    top:0;
+    left:-320px;
+    height:100%;
+    // border-radius: 0 10px 10px 0;
+    width:310px;
+    z-index: 3;
+    /* Background pattern from Subtle Patterns */
+    background: url('../img/aside/hip-square.png');
+    background-repeat: repeat;
+    .menu{
+      // margin:20px;
+      display:flex;
+      flex-wrap: wrap;
+      overflow: visible;
+      img{
+        opacity: .2;
+        margin-right:5px;
+      &:hover{
+        opacity: 1;
+      }
+      }
+    }
   }
-}
-
-.menu nav:hover {
-  cursor: pointer;
 }

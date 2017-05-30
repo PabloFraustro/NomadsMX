@@ -1,33 +1,14 @@
 $(document).ready(function(){
 
+  // Title effect
+  $('#title').animate({
+    'top': '60px',
+    'opacity' : '1'
+  },1000);
 
-  if($(window).scrollTop() > 175){
-    $('#header').css("height","40px");
-    $('#menu').css("margin-top","60px");
-  }
-  else{
-    $('#header').css("height","60px");
-    $('#menu').css("margin-top","80px");
-  }
+  $('#menu').animate({
+    'left' : '0'
+  },1000);
 
-  // ----------MENU-------------
-  //Menu should be hidden
-  $('#menu').hide();
-  // When user clicks menu button
-  $('#btn').click(function(){
-    $('#menu').slideToggle("fast");
-  });
-
-  //scrolling
-  $(window).scroll(function(){
-    if($(window).scrollTop() > 175){
-      $('#header').css("height","40px");
-      $('#menu').css("margin-top","60px");
-    }
-    else{
-      $('#header').css("height","60px");
-      $('#menu').css("margin-top","80px");
-    }
-  })
 
 });
