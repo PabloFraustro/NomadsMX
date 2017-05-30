@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+  $(this).scrollTop(0);
   // Title effect
   $('#title').animate({
     'top': '60px',
