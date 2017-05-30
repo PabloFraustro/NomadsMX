@@ -7,15 +7,15 @@ $(document).ready(function(){
 			var scroll = $(window).scrollTop();
 
 			$('#about-article').css({
-				'transform': 'translate(0px,-' + scroll/3.8 + '%)'
+				'transform': 'translate(0px,-' + scroll/2 + '%)' //3.8
 			});
 
       $('#about-photo').css({
-				'transform': 'translate(0px,-' + scroll/1.5 + '%)'
+				'transform': 'translate(0px,-' + scroll + '%)'
 			});
 
 			$('#title').css({
-				'transform': 'translate(0px, ' + scroll /1.5 + '%)'
+				'transform': 'translate(0px, ' + scroll*1.35 + '%)'
 			});
 		}
 	});

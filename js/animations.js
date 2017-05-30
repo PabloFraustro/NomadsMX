@@ -1,5 +1,7 @@
 $(document).ready(function(){
+
   $(this).scrollTop(0);
+
   // Title effect
   $('#title').animate({
     'top': '60px',
@@ -9,6 +11,10 @@ $(document).ready(function(){
   $('#menu').animate({
     'left' : '0'
   },1000);
+
+  $("#garibaldi").click(function(){
+    window.scrollBy(0, 100);
+  });
 
 
 });

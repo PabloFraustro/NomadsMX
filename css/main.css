@@ -31,7 +31,7 @@ header .container {
   background-position: center 0;
   overflow: hidden;
   z-index: -1;
-  height: 1050px; }
+  height: 1400px; }
   header .container .text .title {
     font-size: 90px;
     color: #F5F5F5;
@@ -60,7 +60,7 @@ header .container {
   overflow: visible;
   z-index: 1; }
   .main .about .container article {
-    top: -400px;
+    top: -500px;
     padding: 40px;
     width: 80%;
     height: 300px;
@@ -88,7 +88,7 @@ header .container {
   overflow: visible;
   position: relative;
   vertical-align: top;
-  top: 150px;
+  top: -400px;
   z-index: 1;
   box-shadow: 5px 5px 22px rgba(0, 0, 0, 0.35); }
   .main .about .photo img {
@@ -99,18 +99,18 @@ header .container {
   width: 75%;
   float: right;
   margin-left: 25%;
-  margin-top: -400px;
-  height: 300px;
+  margin-top: -800px;
+  height: 200px;
   /* Background pattern from Subtle Patterns */
   background: url("../img/aside/hip-square.png");
   background-repeat: repeat; }
   .separator h2 {
-    margin-top: 100px;
+    margin-top: 50px;
     color: #474747;
     text-align: center;
     font-weight: 400;
     font-size: 40px;
-    padding: 0 20px 0 20px; }
+    margin-bottom: 20px; }
     .separator h2 span {
       font-size: 35px;
       font-weight: 300;
@@ -121,12 +121,52 @@ header .container {
     font-size: 20px;
     color: #546975; }
 
-.stories .story1 .separator {
+.stories .story1 .text {
   position: relative;
-  top: 0;
+  top: -300px;
   width: 75%;
   float: right;
-  height: 150px; }
+  height: 300px;
+  margin-left: 25%;
+  background: #FBFBEF; }
+  .stories .story1 .text h4 {
+    margin-top: 70px;
+    text-align: center;
+    color: #937B63;
+    font-size: 80px;
+    font-weight: 300; }
+  .stories .story1 .text p {
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 4z00;
+    padding: 150px;
+    color: #000;
+    background: #FBFBEF;
+    text-align: center; }
+  .stories .story1 .text .quote {
+    margin-top: -200px;
+    color: #546975;
+    font-size: 30px;
+    font-style: normal; }
+    .stories .story1 .text .quote i {
+      margin: 20px; }
+.stories .story1 .photos {
+  position: relative;
+  top: 200px;
+  height: 1000px;
+  width: 75%;
+  float: right;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 300px; }
+  .stories .story1 .photos img {
+    max-width: 100%;
+    padding: 5px; }
+  .stories .story1 .photos .photo2, .stories .story1 .photos .photo3 {
+    max-width: 50%; }
+    .stories .story1 .photos .photo2 img, .stories .story1 .photos .photo3 img {
+      height: 25em; }
 
 * {
   margin: 0;
