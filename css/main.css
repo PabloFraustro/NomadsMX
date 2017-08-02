@@ -35,6 +35,20 @@ header .container {
     font-weight: 300;
     font-size: 20px;
     font-style: italic; }
+  header .container .menu {
+    padding-top: 540px;
+    padding-left: 90px; }
+    header .container .menu a {
+      display: inline-block;
+      padding: 3px;
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: 500;
+      color: #fff; }
+      header .container .menu a:hover {
+        text-decoration: underline; }
+    header .container .menu .portfolios {
+      color: #937B63; }
 
 .main .about .container {
   opacity: 0;
@@ -165,7 +179,9 @@ header .container {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  max-width: 100%;
+  overflow-x: hidden; }
 
 .container {
   max-width: 2000px;

@@ -38,8 +38,26 @@ header{
         font-size: 20px;
         font-style:italic;
       }
+    }
+    .menu {
+      padding-top:540px;
+      padding-left:90px;
+        a{
+          display: inline-block;
+          padding:3px;
+          text-decoration: none;
+          font-size:30px;
+          font-weight: 500;
+          color:#fff;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+        .portfolios{
+          color:#937B63;
+        }
+    }
 
     }
 
-  }
 }
