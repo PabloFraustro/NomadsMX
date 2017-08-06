@@ -1,6 +1,7 @@
 .stories{
 
   .thumbs{
+    visibility: hidden;
     position:absolute;
     width:100%;
     top:750px;
@@ -28,6 +29,7 @@
   }
 
   .story1{
+    visibility: hidden;
     .text{
       position:absolute;
       top:1200px;
@@ -59,33 +61,6 @@
            margin: 20px;
          }
       }
-    }
-    .photos{
-      .photo1{
-        display: inline-block;
-        background: url('../img/story1/first.jpg') #fff;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center 0;
-        height: 1300px;
-        width:100%;
-        overflow: hidden;
-        z-index: -1;
-        margin-bottom:15px;
-      }
-      .photo2{
-        display: inline-block;
-        background: url('../img/story1/second.jpg') #fff;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center 0;
-        height: 800px;
-        width:100%;
-        overflow: hidden;
-        z-index: -1;
-        margin-bottom: 15px;
-      }
-
     }
   }
 }

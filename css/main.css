@@ -1,10 +1,9 @@
 .main aside {
   width: 10%; }
 
-header .container {
+body header .cont {
   width: 100%;
   float: right;
-  position: relative;
   right: 0;
   background: url("../img/header_photo.png") #fff;
   background-size: cover;
@@ -13,7 +12,8 @@ header .container {
   overflow: hidden;
   z-index: -1;
   height: 1400px; }
-  header .container .text .title {
+  body header .cont .text .title {
+    overflow: visible;
     font-size: 130px;
     text-align: center;
     margin-top: 240px;
@@ -24,10 +24,10 @@ header .container {
     left: 3%;
     font-weight: 500;
     margin-left: 40px; }
-    header .container .text .title span {
+    body header .cont .text .title span {
       font-size: 40px;
       font-weight: 300; }
-  header .container .text h3 {
+  body header .cont .text h3 {
     color: #fff;
     margin-left: 40px;
     position: relative;
@@ -35,22 +35,45 @@ header .container {
     font-weight: 300;
     font-size: 20px;
     font-style: italic; }
-  header .container .menu {
+  body header .cont nav {
+    opacity: 0;
     padding-top: 540px;
-    padding-left: 90px; }
-    header .container .menu a {
+    padding-left: 90px;
+    position: absolute;
+    left: -300px; }
+    body header .cont nav a {
       display: inline-block;
+      position: relative;
+      z-index: 5;
       padding: 3px;
       text-decoration: none;
       font-size: 30px;
       font-weight: 500;
       color: #fff; }
-      header .container .menu a:hover {
-        text-decoration: underline; }
-    header .container .menu .portfolios {
+      body header .cont nav a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        visibility: hidden;
+        transform: scaleX(0);
+        background-color: white;
+        transition: all .3s ease; }
+      body header .cont nav a:hover::after {
+        transform: scaleX(1);
+        visibility: visible; }
+    body header .cont nav .portfolios {
       color: #937B63; }
+body header #arrows {
+  color: #fff;
+  position: absolute;
+  right: 50%;
+  bottom: 5%; }
 
 .main .about .container {
+  overflow: visible;
   opacity: 0;
   width: 25%;
   height: 100%;
@@ -78,6 +101,7 @@ header .container {
       padding: 10px;
       border: solid 1px rgba(255, 255, 255, 0.3); }
   .main .about .container .credits {
+    overflow: visible;
     padding: 5px;
     color: #fff;
     text-align: center;
@@ -86,7 +110,6 @@ header .container {
     height: 15%;
     background: #937B63; }
     .main .about .container .credits p {
-      padding: 10px;
       font-size: 20px;
       font-weight: 200; }
     .main .about .container .credits button {
@@ -102,6 +125,7 @@ header .container {
       padding: 5px; }
 
 .stories .thumbs {
+  visibility: hidden;
   position: absolute;
   width: 100%;
   top: 750px;
@@ -123,55 +147,35 @@ header .container {
     opacity: .3; }
     .stories .thumbs img:hover {
       opacity: 1; }
-.stories .story1 .text {
-  position: absolute;
-  top: 1200px;
-  width: 100%;
-  height: 200px;
-  background: #FBFBEF; }
-  .stories .story1 .text h4 {
-    margin-top: 90px;
-    text-align: center;
-    color: #937B63;
-    font-size: 80px;
-    font-weight: 300; }
-  .stories .story1 .text p {
-    font-size: 20px;
-    line-height: 50px;
-    font-weight: 400;
-    padding: 150px;
-    color: #000;
-    background: #FBFBEF;
-    text-align: center; }
-  .stories .story1 .text .quote {
-    margin-top: -200px;
-    color: #546975;
-    font-size: 30px;
-    font-style: normal; }
-    .stories .story1 .text .quote i {
-      margin: 20px; }
-.stories .story1 .photos .photo1 {
-  display: inline-block;
-  background: url("../img/story1/first.jpg") #fff;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center 0;
-  height: 1300px;
-  width: 100%;
-  overflow: hidden;
-  z-index: -1;
-  margin-bottom: 15px; }
-.stories .story1 .photos .photo2 {
-  display: inline-block;
-  background: url("../img/story1/second.jpg") #fff;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center 0;
-  height: 800px;
-  width: 100%;
-  overflow: hidden;
-  z-index: -1;
-  margin-bottom: 15px; }
+.stories .story1 {
+  visibility: hidden; }
+  .stories .story1 .text {
+    position: absolute;
+    top: 1200px;
+    width: 100%;
+    height: 200px;
+    background: #FBFBEF; }
+    .stories .story1 .text h4 {
+      margin-top: 90px;
+      text-align: center;
+      color: #937B63;
+      font-size: 80px;
+      font-weight: 300; }
+    .stories .story1 .text p {
+      font-size: 20px;
+      line-height: 50px;
+      font-weight: 400;
+      padding: 150px;
+      color: #000;
+      background: #FBFBEF;
+      text-align: center; }
+    .stories .story1 .text .quote {
+      margin-top: -200px;
+      color: #546975;
+      font-size: 30px;
+      font-style: normal; }
+      .stories .story1 .text .quote i {
+        margin: 20px; }
 
 * {
   margin: 0;
