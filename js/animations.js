@@ -18,16 +18,28 @@ $('#menu').animate({
     'opacity' : '1'
 },1000);
 
-// Scroll down animation before scrolling
 
-$(window).on("scroll",function(){
-  if($(window).scrollTop() > 0){
-    $('#arrows').css({'visibility':'hidden'})
-  }
-  else{
-    $('#arrows').css({'visibility':'visible'})
-  }
-})
+// add interval to show arrows for scrolling
+var arrows_delay = setInterval(function(){
+  var arrows_int = setInterval(function(){
+  $("#arrows").toggleClass("display");
+},2000);
+clearInterval(arrows_delay);
+},4000);
+
+
+$(window).one("scroll",function(){
+    if(typeof arrows_int == 'undefined'){
+      clearInterval(arrows_int);
+      $("#arrows").removeClass("display");
+    }
+    else{
+      clearInterval(arrows_int);
+      clearInterval(arrows_delay);
+      $("#arrows").removeClass("display");
+    }
+
+});
 
 
 });

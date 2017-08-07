@@ -53,7 +53,7 @@ body{
             z-index: 5;
             padding:3px;
             text-decoration: none;
-            font-size:30px;
+            font-size:23px;
             font-weight: 500;
             color:#fff;
 
@@ -88,7 +88,12 @@ body{
     position:absolute;
     right:50%;
     bottom:5%;
-    // visibility: hidden;
+    opacity:0;
+    transition: opacity .8s ease;
   }
+  #arrows.display{
+    opacity: 1;
+  }
+
   }
 }

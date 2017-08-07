@@ -47,7 +47,7 @@ body header .cont {
       z-index: 5;
       padding: 3px;
       text-decoration: none;
-      font-size: 30px;
+      font-size: 23px;
       font-weight: 500;
       color: #fff; }
       body header .cont nav a::after {
@@ -70,7 +70,11 @@ body header #arrows {
   color: #fff;
   position: absolute;
   right: 50%;
-  bottom: 5%; }
+  bottom: 5%;
+  opacity: 0;
+  transition: opacity .8s ease; }
+body header #arrows.display {
+  opacity: 1; }
 
 .main .about .container {
   overflow: visible;
